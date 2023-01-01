@@ -16,4 +16,6 @@
 
 <p> <b> Quality </b>: i teach scenarios which we use daily in industries.</p>
 
-<p> <b> Course </b> fee : 5,000</p>
+<p> <b> Course Fee </b> fee : 5,000</p>
+
+<p> <b> syllabus : <a href="./topics.md">click me</a></b>  </p>
