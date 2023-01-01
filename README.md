@@ -3,7 +3,7 @@
 <h2><b>About class</b></h2>
 
 <p> 
-  <img src="https://github.com/harishkumarforeverr/React.js-classes-Jan-2023-Batch" >
+  <img src="https://drive.google.com/file/d/1iqTwaKSGEXBbxw8ESmlRpx_TDwrko_xv/view?usp=drivesdk" >
 </p>
 
 <p> <b> Instructor </b> : Harish Kumar (Mern stack developer).</p>
