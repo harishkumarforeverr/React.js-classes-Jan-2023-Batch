@@ -3,7 +3,7 @@
 <h2><b>About class</b></h2>
 
 <p> 
-  <img src="course.jpeg" width="350" title="hover text" width="350" alt="accessibility text">
+  <img src="./course.jpeg" >
 </p>
 
 <p> <b> Instructor </b> : Harish Kumar (Mern stack developer).</p>
