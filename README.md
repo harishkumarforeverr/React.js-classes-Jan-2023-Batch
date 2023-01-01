@@ -10,7 +10,7 @@
 
 <p> <b> Topics </b> : html, css , javascript, react.js.</p>
 
-<p> <b> Days </b> : 45days.</p>
+<p> <b> Days </b> : 60days or 45days.</p>
 
 <p> <b> Duration </b>: 45min per day.</p>
 
