@@ -1,17 +1,19 @@
-# React.js-classes-Jan-2023-Batch
+<h1> <b>React.js-classes-Jan-2023-Batch</b></h1>
 
-## About class
+<h2><b>About class</b></h2>
 
-###### Instructor : Harish Kumar (Mern stack developer).
+<p> 
+  <img src="course.jpeg" width="350" title="hover text" width="350" alt="accessibility text">
+</p>
 
-###### Topics : html, css , javascript, react.js.
+<p> <b> Instructor </b> : Harish Kumar (Mern stack developer).</p>
 
-###### Days : 45days.
+<p> <b> Topics </b> : html, css , javascript, react.js.</p>
 
-###### Duration: 45min per day.
+<p> <b> Days </b> : 45days.</p>
 
-###### Quality: i teach scenarios which we use daily in industries.
+<p> <b> Duration </b>: 45min per day.</p>
 
-###### Course fee : 5,000
+<p> <b> Quality </b>: i teach scenarios which we use daily in industries.</p>
 
-###### if your interested me, im going to start the classes for just 5members
+<p> <b> Course </b> fee : 5,000</p>
