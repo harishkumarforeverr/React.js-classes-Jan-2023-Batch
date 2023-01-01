@@ -3,7 +3,7 @@
 <h2><b>About class</b></h2>
 
 <p> 
-  <img src="https://asset.cloudinary.com/dev2prod/31f71c65afd8d0dc7d380c461c091367" >
+  <img src="./course.jpeg" >
 </p>
 
 <p> <b> Instructor </b> : Harish Kumar (Mern stack developer).</p>
