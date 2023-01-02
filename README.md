@@ -2,10 +2,6 @@
 
 <h2><b>About class</b></h2>
 
-<p> 
-  <img src="./course.jpeg" >
-</p>
-
 <p> <b> Instructor </b> : Harish Kumar (Mern stack developer).</p>
 
 <p> <b> Topics </b> : html, css , javascript, react.js.</p>
@@ -18,4 +14,4 @@
 
 <p> <b> Course Fee </b> fee : 5,000</p>
 
-<p> <b> syllabus : <a href="./topics.md">click me</a></b>  </p>
+<p> <b> syllabus : <a href="topics.md">click me</a></b></p>
