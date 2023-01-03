@@ -11,3 +11,10 @@
 4. today classes code url : https://github.com/harishkumarforeverr/React.js-classes-Jan-2023-Batch/tree/main/Date03-01-2023
 
 5. today classes Recorded url : https://drive.google.com/file/d/1Tv0f_zGWwuQ-Q7Jsq9-xXyZQUEwjxgEi/view?usp=drivesdk
+
+6. terminal command
+   1. node -v
+   2. npm -v
+   3. npm i -g npx
+   4. create a new folder in C Drive or D Drive then do
+      npx create-react-app anyname ( here anyName must be start with small name)
