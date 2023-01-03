@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.scss";
-import Conditions from "./Conditions";
-import Count from "./Count";
+import ANTD from "./components/Antd";
+import MUI from "./components/MUI";
+// import { Button } from "antd";
 
 const App = () => {
   return (
-    <>
-      <Conditions />
-    </>
+    <div>
+      <h1>
+        harish <span>kumar</span>
+      </h1>
+    </div>
   );
 };
 export default App;
