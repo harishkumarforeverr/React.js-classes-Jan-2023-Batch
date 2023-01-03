@@ -103,7 +103,7 @@
 
  <h1><b> HTML</b> </h1>
 
-h1 and div and antd desgin component and ol and li p, b, span, title, textarea, a and h1 tag difference, img, table,iframe, html, input, button, html, body,head,script tag
+h1 and div and ol and li p, b, span, title, textarea, a and h1 tag difference, img, table,iframe, html, input, button,html,body,head,script tag, antd component and
 
  <h1><b> CSS</b> </h1>
 
