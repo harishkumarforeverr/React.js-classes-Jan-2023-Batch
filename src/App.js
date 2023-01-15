@@ -1,11 +1,13 @@
-import React from "react";
+import React, {
+  useState,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+} from "react";
 import "./App.scss";
-
+import MyContext from "./component/useContext";
 const App = () => {
-  return (
-     <div>
-      
-     </div>
-  );
+  return 123
 };
 export default App;
