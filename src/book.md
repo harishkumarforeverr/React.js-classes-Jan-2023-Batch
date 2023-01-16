@@ -169,6 +169,7 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 32. router and history push and passing data from one route to another
 
+
 33. redux
 34. useSelector hooks
 35. useDispatch hooks

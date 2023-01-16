@@ -6,6 +6,7 @@ import React, {
   useRef,
 } from "react";
 import "./App.scss";
+import "./component/Redux/index";
 import Dummy from "./Dummy";
 const App = () => {
   function name(a) {
