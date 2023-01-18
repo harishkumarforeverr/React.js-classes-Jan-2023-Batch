@@ -81,6 +81,8 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 # useState 5 scenarios and state update in useState boolean {} number string array
 
+<!--  engoug for today -->
+
 # useEffect with dependency and without dependency
 
 # props LHS and RHS
@@ -169,7 +171,6 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 32. router and history push and passing data from one route to another
 
-
 33. redux
 34. useSelector hooks
 35. useDispatch hooks
@@ -212,7 +213,21 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 10. var keyword
     The var statement declares a variable. Variables are containers for storing information. Creating a variable in JavaScript is called "declaring" a variable: var carName; After the declaration, the variable is empty (it has no value).
 
-11. String Indexing
+11. object and
+
+12. object destructure, Object extracting values and Object keys and Object.values
+
+13. Array and
+
+14. Array destructure
+
+15. boolean
+
+16. number
+
+17. map method
+
+18. String Indexing
     JavaScript Strings
     The indexOf() Method
     indexOf() returns the position of the first occurrence of a value in a string.
@@ -224,7 +239,7 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
     let result = text.indexOf("to");
     console.log(result);
 
-12. Useful string methods
+19. Useful string methods
 
     1. String constructor
     2. concat
@@ -232,7 +247,7 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
     4. split() splict(" ")
     5. - operator
 
-13. typeof , string to number, number to string conversion
+20. typeof , string to number, number to string conversion
     console.log(typeof "star", typeof 12, typeof true);
     const no = "20";
     console.log(typeof no);
@@ -241,16 +256,18 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
     const SmallNo = String(20);
     console.log(typeof SmallNo);
 
-14. Template Strings
+21. Template Strings
     const name = "Johnny";
     const age = 20;
     const str = `He's often called ${name} ${age}`;
     const newStr = "He's often called " + name + " " + age;
     console.log(str, newStr);
 
-15. undefined null
+22. undefined null
 
-16. if else , truthy and falsy values
+<!--  enoghy today -->
+
+21. if else , truthy and falsy values
     // if (true) {
     // console.log("ok");
     // }
@@ -289,21 +306,13 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 21. Switch statement
 
-22. object and
+22. rest operator
 
-23. object destructure
+23. callback
 
-24. Array and
+24. forEach method
 
-25. Array destructure
-
-26. rest operator
-
-27. callback
-
-28. forEach method
-
-29. for in and for of
+25. for in and for of
     const person = {fname:"John", lname:"Doe", age:25};
 
 let text = "";
@@ -317,8 +326,6 @@ let text = "";
 for (let x of cars) {
 text += x;
 }
-
-30. map method
 
 31. filter method
 

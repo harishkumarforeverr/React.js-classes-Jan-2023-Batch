@@ -6,18 +6,12 @@ import React, {
   useRef,
 } from "react";
 import "./App.scss";
-import "./component/Redux/index";
-import Dummy from "./Dummy";
 const App = () => {
-  function name(a) {
-    console.log(a);
-  }
-  name(10);
-
+  const arr = [1, 2, 3, 4, "harish", false, { name: "33" }];
+  console.log(arr[4]);
   return (
     <div>
-      {/* <h1><p><span><a>dddddddddddddddd</a></span></p></h1> */}
-      <Dummy />
+      <h1>hello world</h1>
     </div>
   );
 };
