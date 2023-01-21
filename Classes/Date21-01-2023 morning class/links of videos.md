@@ -15,5 +15,3 @@
 1. https://drive.google.com/file/d/19HywKOwYmf_CmY2b9uGkcjCMpaWx23d7/view
 
 2. https://drive.google.com/file/d/1uFuxF4FkjJ5fOi8GxAm3U0Ck5o7F5Z95/view?usp=sharing
-
-3. https://drive.google.com/file/d/1NlXxCPIoJ_-j8FjEVtt5h2IiN18oLt02/view?usp=sharing
