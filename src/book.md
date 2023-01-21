@@ -265,6 +265,8 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 22. undefined null
 
+23. filter
+
 <!--  enoghy today -->
 
 21. if else , truthy and falsy values
