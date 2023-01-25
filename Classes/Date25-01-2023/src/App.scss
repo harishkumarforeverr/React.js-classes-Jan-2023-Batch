@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .box {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+  }
+  .one {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  .two {
+    justify-self: center;
+    align-self: center;
+  }
+  .three {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .box {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+  }
+  .one {
+  }
+  .two {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .three {
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+}

@@ -32,39 +32,27 @@ const App = () => {
   ];
   const [user, setUser] = useState({});
   const handleTheUser = (arg) => {
-    if (true) {
-      console.log("ok");
-    }
-    if (false) {
-      console.log("ok false");
-    }
-    if (0) {
-      console.log("ok zerto");
-    }
-    if ("") {
-      console.log("ok empty ");
-    }
-    if (null) {
-      console.log("ok  null");
-    }
-
-    if (undefined) {
-      console.log("ok undefined");
-    }
-
-    if (11) {
-      console.log("ok 111");
-    }
-    if ("sss") {
-      console.log("ok 33");
-    }
+    const newObj = obj.findIndex((argObj) => {
+      console.log(argObj);
+      return argObj.id == arg;
+    });
+    // const newObj = obj.find((argObj) => {
+    //   console.log(argObj);
+    //   return argObj.id == arg;
+    // });
+    console.log("newObj", newObj);
+    // if (newObj == undefined) {
+    //   setUser({});
+    // } else {
+    //   setUser(newObj);
+    // }
   };
   return (
     <div>
       <h1> hello world</h1>
       <button
         onClick={() => {
-          handleTheUser(1);
+          handleTheUser(2882822);
         }}
       >
         {" "}
@@ -72,7 +60,7 @@ const App = () => {
       </button>
       <button
         onClick={() => {
-          handleTheUser(2);
+          handleTheUser(282298824);
         }}
       >
         {" "}
@@ -102,7 +90,9 @@ const App = () => {
         {" "}
         get id 100
       </button>
-
+      <div> name:{user?.name} </div>
+      <div> role:{user?.role} </div>
+      <div> id:{user?.id} </div>
       {/* <Hello myname={myname} age={22} myparentFun={myparentFun} /> */}
     </div>
   );

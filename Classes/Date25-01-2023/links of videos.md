@@ -23,5 +23,3 @@
 5. https://drive.google.com/file/d/1DWTZ93ylMUkpmmbATcwetG9soPgRD_dF/view?usp=sharing
 
 6. https://drive.google.com/file/d/1Dilm_d0ObdCu-47D5e59xN8-wmjZ08rd/view?usp=sharing
-
-7. https://drive.google.com/file/d/1dca3n6x-B03SFNgc7lwRTQIUck08Wmtd/view?usp=share_link
