@@ -1,3 +1,3 @@
-## class video url : https://drive.google.com/file/d/1VC2yQX5ufqY_kin1CZB8W55xIsV-Roav/view?usp=sharing
+## class video url : https://drive.google.com/file/d/1MakpT7nYy2vF8MctR5IYtheWkwmfJ0oQ/view?usp=sharing
 
-## code url : https://github.com/harishkumarforeverr/React.js-classes-Jan-2023-Batch/tree/main/Classes/Date21-01-2023%20evening%20class
+## code url : https://github.com/harishkumarforeverr/React.js-classes-Jan-2023-Batch/tree/main/Classes/Date28-01-2023
