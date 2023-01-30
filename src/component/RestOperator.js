@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Hello from "./Hello";
-import Dummy from "./Dummy";
 import "./App.scss";
 
 const App = () => {
-  const imfun1 = (a) => {
-    console.log("im called",a);
-  };
+  const fun1=(a,b,...harish)=>{
+    console.log(a,b,harish)
+  }
+  // 
+  useEffect(()=>{ fun1(1,2,4,5,6,7,8,9,"harishsss", {ha:12}) },[])
   return (
     <div>
-      <Dummy harish11={imfun1} />
+      <h1  >hello world</h1>
     </div>
   );
 };
