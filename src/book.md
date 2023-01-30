@@ -119,7 +119,9 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 16. conditionally show the div using useState
 
 17. assigning jsx to constant
+
 18. form on submit
+
 19. condition ga showing using ternary operator
 
 20. donot change props and only update the state
@@ -294,13 +296,13 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 // console.log("ok");
 // }
 
-<!--  till here completed -->
 17. Ternary operator
     ?
 18. And Or Operator
     && ||
 19. Nested If else
  
+<!--  till here completed -->
 
 21. Switch statement
 
