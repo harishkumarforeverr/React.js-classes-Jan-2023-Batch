@@ -147,21 +147,24 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 <!--  till here completed -->
 
+18. form on submit
+
+
 12. localStorage
+
+27. useCallback and useMemos
+14. what is git and what ticket and bigbucket and source tree and what is terminal
+d
 
 6. moment.js library
 
-5. uuid library
-
-
+5. uuid library 
 
 26. material ui or antd basis introduction
   
 
 
-18. form on submit
-
-27. useCallback and useMemos
+31. axios fetch
 
 28. class compoenet
     class Car extends React.Component {
@@ -177,7 +180,6 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 30. context api,
 
-31. axios fetch
 
 
 32. router and history push and passing data from one route to another
@@ -186,8 +188,7 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 34. useSelector hooks
 35. useDispatch hooks
 
-14. what is git and what ticket and bigbucket and source tree and what is terminal
-d
+
 # JAVASCRIPT
 
 1.  Introduction
