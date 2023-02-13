@@ -145,22 +145,25 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
   
 21. crud operation // create read update delete key (delelte id, name, key)
 
-<!--  till here completed -->
-
 18. form on submit
 
 
 12. localStorage
-
-27. useCallback and useMemos
-14. what is git and what ticket and bigbucket and source tree and what is terminal
-d
-
-6. moment.js library
+14. what is git and what ticket and bigbucket and source tree and what is terminal 
 
 5. uuid library 
 
+6. moment.js library
+
+
 26. material ui or antd basis introduction
+
+<!--  till here completed -->
+
+
+
+27. useCallback and useMemos
+
   
 
 
