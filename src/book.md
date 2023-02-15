@@ -158,16 +158,12 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
 
 26. material ui or antd basis introduction
 
+27. useCallback and useMemos
+
+
 <!--  till here completed -->
 
 
-
-27. useCallback and useMemos
-
-  
-
-
-31. axios fetch
 
 28. class compoenet
     class Car extends React.Component {
@@ -180,8 +176,9 @@ JSX is an extension of the JavaScript language based on ES6, and is translated i
     }
     }
 29. life cycle methods in functional and class components
+ 
 
-30. context api,
+31. axios fetch
 
 
 
