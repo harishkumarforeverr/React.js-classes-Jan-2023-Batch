@@ -175,15 +175,11 @@ useMemos
 
 
 31. axios fetch
+
+
+32. router and navigator push and passing data from one route to another
  
-<!--  till here completed -->
-
-
-
-
-
-
-32. router and history push and passing data from one route to another
+<!--  till here completed --> 
 
 33. redux
 34. useSelector hooks
