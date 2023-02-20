@@ -10,7 +10,7 @@
 6. https://drive.google.com/file/d/1trgZfnqaoXzLkXpuj_rlMC8FV_FDmClX/view?usp=share_link
 7. https://drive.google.com/file/d/1dQOD8DaklyNx1ypdnbHudCsa4k17wq1V/view?usp=sharing
 
-# javascript classes links
+# javascript And React.js classes links
 
 1. https://drive.google.com/file/d/19HywKOwYmf_CmY2b9uGkcjCMpaWx23d7/view
 
