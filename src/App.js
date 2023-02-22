@@ -6,50 +6,19 @@ import React, {
   useRef,
 } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.scss";
-import { getAllUsersHandler } from "./component/axios/CurdOperation";
-import Dummy from "./Dummy";
-import { useLocation, useNavigate } from "react-router-dom";
-const Java = () => {
-  const navigate = useNavigate();
-  return (
-    <div>
-      <h1>Java</h1>
-      <button
-        onClick={() => {
-          navigate("/hello", { state: { updatingType: "dashboardprofile" } });
-        }}
-      >
-        route{" "} 
-      </button>
-    </div>
-  );
-};
-const Hello = () => {
-  const navigate = useNavigate();
-  const { state } = useLocation();
-  console.log(state);
-  return (
-    <div>
-      Hello  {state.updatingType}
-      <button
-        onClick={() => {
-          navigate(-1);
-        }}
-      >
-        goBack{" "}
-      </button>
-    </div>
-  );
-};
+import "./App.scss";  
+import CreateTodo from "./Todo/create";
+import UpdateTodo from "./Todo/update";
+import Todo from "./Todo"
+import NotFoundPage from "./Todo/NotFounPage";
 const App = () => {
   return (
     <div>
       <Routes> 
-        <Route path={"/"} element={<h1>hello world</h1>} />
-        <Route path={"/hello"} element={<Hello  />} />
-        <Route path={"/java"} element={<Java />} />
-        <Route path={"/javascript"} element={<h1>hello javascript</h1>} />
+        <Route path={"/"} element={<Todo />} />
+        <Route path={"/create"} element={<CreateTodo  />} />
+        <Route path={"/update"} element={<UpdateTodo />} />
+        <Route path={"/*"} element={<NotFoundPage />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,21 @@
+.tableData {
+  td {
+    font-size: 1.5rem;
+  }
+}
+.tableROw {
+  th {
+    font-size: 1.5rem;
+    width: 15rem;
+    text-align: left;
+  }
+}
+
+.title{
+  display: flex;
+  gap:5rem;
+  margin-bottom: 3rem;
+}
+button{
+  cursor: pointer;
+}
