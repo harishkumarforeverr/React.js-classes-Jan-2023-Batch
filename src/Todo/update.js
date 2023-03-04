@@ -1,31 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.scss";
-
+import { v4 as uuidv4 } from "uuid";
+// {
+//   name: "harish",
+//   job: "react.js",
+//   id: uuidv4(),
+//   age: "22",
+// },
 const UpdateTodo = () => {
+  const [data, setData] = useState({
+    name: "harish",
+    job: "react",
+    age: "322",
+    id: uuidv4(),
+  });
   const navigate = useNavigate();
+  const handlerTheInputChange = (e) => {
+    const { name, value } = e.target;
+    setData((prev) => {
+      return {
+        ...prev,
+        [name]: value,
+      };
+    });
+  };
+  const submit = () => {
+    const updatedUser = {
+      ...data,
+    };
+    console.log("datadatadata", updatedUser);
+    // navigate("/");
+  };
   return (
     <div>
-      <h1>update Todo</h1>
+      <h1>create Todo</h1>
       <h1>
         {" "}
-        name : <input placeholder="enter your name" value={"harish"} />
+        name :{" "}
+        <input
+          name="name"
+          value={data.name}
+          onChange={handlerTheInputChange}
+          placeholder="enter your name"
+        />
       </h1>
       <h1>
         {" "}
-        age : <input placeholder="enter your age" value={22} />
+        age :{" "}
+        <input
+          name="age"
+          value={data.age}
+          placeholder="enter your age"
+          onChange={handlerTheInputChange}
+        />
       </h1>
       <h1>
         {" "}
-        role : <input placeholder="enter your name" value={"react"} />
+        role :{" "}
+        <input
+          name="job"
+          value={data.job}
+          placeholder="enter your role"
+          onChange={handlerTheInputChange}
+        />
       </h1>
-      <button
-        onClick={() => {
-          navigate("/");
-        }}
-      >
-        Save
-      </button>
+      <button onClick={submit}>Save</button>
     </div>
   );
 };

@@ -1,61 +1,63 @@
 import React, { useState } from "react";
 import "./index.scss";
 import { useNavigate } from "react-router-dom";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 const initialData = [
   {
     name: "harish",
     job: "react.js",
-    id:uuidv4(),
+    id: uuidv4(),
     age: "22",
   },
   {
     name: "kalyan",
     job: "angular.js",
-    id:uuidv4(),
+    id: uuidv4(),
     age: "20",
   },
   {
     name: "dinesh",
     job: "javascript",
-    id:uuidv4(),
+    id: uuidv4(),
     age: "22",
   },
 
   {
     name: "chandana",
     job: "python",
-    id:uuidv4(),
+    id: uuidv4(),
     age: "17",
   },
 
   {
     name: "kumar",
     job: "react.js",
-    id:uuidv4(),
+    id: uuidv4(),
     age: "22",
   },
   {
     name: "sharyana",
     job: "javascript",
-    id:uuidv4(),
+    id: uuidv4(),
     age: "22",
   },
 
   {
     name: "shiva",
     job: "AI",
-    id:uuidv4(),
+    id: uuidv4(),
     age: "22",
   },
 ];
+// CRUD
 const Todo = () => {
   const navigate = useNavigate();
-  const [data, setData] = useState(initialData);
+  let [data, setData] = useState(initialData);
   console.log(data);
-  const deleteHandler=(index)=>{
-  //  const updated=data.
-  }
+  const deleteHandler = (index) => {  
+     const updated=data.filter((obj)=>{ return  obj.id!==index}); 
+     setData(updated);
+  };
   return (
     <div>
       <div className="title">
@@ -85,9 +87,14 @@ const Todo = () => {
               <td>{obj.job}</td>
               <td>
                 {" "}
-                <button onClick={()=>{
-                  deleteHandler(obj.id)
-                }}> delete</button>
+                <button
+                  onClick={() => {
+                    deleteHandler(obj.id);
+                  }}
+                >
+                  {" "}
+                  delete
+                </button>
               </td>
               <td>
                 {" "}
