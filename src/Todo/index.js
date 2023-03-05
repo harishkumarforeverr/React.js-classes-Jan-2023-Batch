@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
+import {useDispatch,useSelector} from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 const initialData = [
@@ -58,6 +59,13 @@ const Todo = () => {
      const updated=data.filter((obj)=>{ return  obj.id!==index}); 
      setData(updated);
   };
+  const dispatch=useDispatch();
+  const state=useSelector((state)=>state)
+  console.log("statestate",state)
+  useEffect(()=>{
+    dispatch({ type: 'INCREMENT' })
+    dispatch({ type: 'INCREMENT' }) 
+  },[])
   return (
     <div>
       <div className="title">

@@ -11,9 +11,11 @@ import CreateTodo from "./Todo/create";
 import UpdateTodo from "./Todo/update";
 import Todo from "./Todo"
 import NotFoundPage from "./Todo/NotFounPage";
+import ReactHooksStoresExample from "./component/useReducer&userContext/useReducer&userContext";
 const App = () => {
   return (
     <div>
+    <ReactHooksStoresExample />
       <Routes> 
         <Route path={"/"} element={<Todo />} />
         <Route path={"/create"} element={<CreateTodo  />} />
