@@ -17,9 +17,12 @@ import NotFoundPage from "./Todo/NotFounPage";
 const App = () => {
   return (
     <div> 
+    {/* store ==> { view="home", show:true} */}
       <Routes> 
-        <Route path={"/"} element={<Todo />} />
-        <Route path={"/create"} element={<CreateTodo  />} />
+        <Route path={"/"} element={<Todo  />} /> 
+        {/* // view="home" show="true"  */}
+        <Route path={"/create"} element={<CreateTodo  />} /> 
+        {/* // view="home" show="true"  */}
         <Route path={"/update"} element={<UpdateTodo />} />
         <Route path={"/*"} element={<NotFoundPage />} />
       </Routes>
