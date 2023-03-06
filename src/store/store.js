@@ -1,5 +1,5 @@
-import { createStore } from 'redux'
-
+import { createStore } from "redux";
+import { v4 as uuidv4 } from "uuid";
 /**
  * This is a reducer, a pure function with (state, action) => state signature.
  * It describes how an action transforms the state into the next state.
@@ -12,20 +12,82 @@ import { createStore } from 'redux'
  * follows a different convention (such as function maps) if it makes sense for your
  * project.
  */
-function counter(state = 0, action) {
+const initialData = [
+  {
+    name: "harish",
+    job: "react.js",
+    id: uuidv4(),
+    age: "22",
+  },
+  {
+    name: "kalyan",
+    job: "angular.js",
+    id: uuidv4(),
+    age: "20",
+  },
+  {
+    name: "dinesh",
+    job: "javascript",
+    id: uuidv4(),
+    age: "22",
+  },
+
+  {
+    name: "chandana",
+    job: "python",
+    id: uuidv4(),
+    age: "17",
+  },
+
+  {
+    name: "kumar",
+    job: "react.js",
+    id: uuidv4(),
+    age: "22",
+  },
+  {
+    name: "sharyana",
+    job: "javascript",
+    id: uuidv4(),
+    age: "22",
+  },
+
+  {
+    name: "shiva",
+    job: "AI",
+    id: uuidv4(),
+    age: "22",
+  },
+];
+function counter(state = initialData, action) {
   switch (action.type) {
-    case 'INCREMENT':
-      return state + 1
-    case 'DECREMENT':
-      return state - 1
+    case "ADD_UPDATED_DATA":
+      console.log("action 1", action);
+      return action.payload;
+    case "ADD_TODO":
+      console.log("action 2", action);
+      return [action.payload, ...state];
+    case "UPDTAE_TODO":
+      const updatedState = state.map((obj) => {
+        if (action.payload.id == obj.id) {
+          return action.payload;
+        }
+        return obj;
+      });
+      console.log("updatedState",updatedState)
+      return updatedState;
     default:
-      return state
+      console.log("action 3", action);
+      return state;
   }
 }
 
 // Create a Redux store holding the state of your app.
 // Its API is { subscribe, dispatch, getState }.
-let store = createStore(counter,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+let store = createStore(
+  counter,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 export default store;
 

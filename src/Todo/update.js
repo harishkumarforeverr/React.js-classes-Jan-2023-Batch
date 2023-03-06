@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import "./index.scss";
 import { v4 as uuidv4 } from "uuid";
 // {
@@ -9,12 +10,13 @@ import { v4 as uuidv4 } from "uuid";
 //   age: "22",
 // },
 const UpdateTodo = () => {
-  const [data, setData] = useState({
-    name: "harish",
-    job: "react",
-    age: "322",
-    id: uuidv4(),
-  });
+  const [data, setData] = useState({});
+  const location = useLocation();
+  const dispatch=useDispatch();
+  console.log("location", location);
+  useEffect(() => {
+    setData(location.state);
+  }, [location]);
   const navigate = useNavigate();
   const handlerTheInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,9 +30,13 @@ const UpdateTodo = () => {
   const submit = () => {
     const updatedUser = {
       ...data,
-    };
-    console.log("datadatadata", updatedUser);
-    // navigate("/");
+    }; 
+    dispatch({
+      type:"UPDTAE_TODO",
+      payload:updatedUser
+    })
+    navigate("/")
+
   };
   return (
     <div>

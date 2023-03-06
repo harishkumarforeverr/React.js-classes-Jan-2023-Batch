@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import "./index.scss";
 import { v4 as uuidv4 } from "uuid";
 // {
@@ -9,6 +10,7 @@ import { v4 as uuidv4 } from "uuid";
 //   age: "22",
 // },
 const CreateTodo = () => {
+  const dispatch=useDispatch();
   const [data, setData] = useState({
     name: "",
     job: "",
@@ -24,13 +26,20 @@ const CreateTodo = () => {
       };
     });
   };
-  const submit=()=>{
-    const updatedUser={
-      ...data, id: uuidv4(),
-    }
-    console.log("datadatadata",updatedUser);
-    // navigate("/");
-  }
+  const submit = () => {
+    const updatedUser = {
+      ...data,
+      id: uuidv4(),
+    }; 
+    if(updatedUser.name&&updatedUser.age&&updatedUser.job){
+      dispatch({
+        type:"ADD_TODO",
+        payload:updatedUser
+      })
+      navigate("/")
+    } 
+
+  };
   return (
     <div>
       <h1>create Todo</h1>
@@ -64,11 +73,7 @@ const CreateTodo = () => {
           onChange={handlerTheInputChange}
         />
       </h1>
-      <button
-        onClick={submit}
-      >
-        Save
-      </button>
+      <button onClick={submit}>Save</button>
     </div>
   );
 };
