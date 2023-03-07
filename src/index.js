@@ -7,14 +7,16 @@ import reportWebVitals from "./reportWebVitals";
 import "antd/dist/reset.css";
 import { Provider } from 'react-redux'
 import store from "./store/store";
+import ReactHooksStoresExample from "./component/useReducer&userContext/useReducer&userContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </BrowserRouter>
+    {/* <BrowserRouter>
+      <Provider store={store}> */}
+      <ReactHooksStoresExample />
+        {/* <App /> */}
+      {/* </Provider>
+    </BrowserRouter> */}
   </React.StrictMode>
 );
 

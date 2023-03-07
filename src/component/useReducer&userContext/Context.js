@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer,createContext } from "react";
 
 let reducer = (state, action) => {
   switch (action.type) {
@@ -13,7 +13,7 @@ let reducer = (state, action) => {
 
 const initialState = { count: 0, username: "bojan" };
 
-const CounterContext = React.createContext(initialState);
+const CounterContext = createContext({});
 
 function CounterProvider(props) {
   const [state, dispatch] = useReducer(reducer, initialState);

@@ -59,13 +59,11 @@ const initialData = [
     age: "22",
   },
 ];
-function counter(state = initialData, action) {
+function UserReducer(state = initialData, action) {
   switch (action.type) {
-    case "ADD_UPDATED_DATA":
-      console.log("action 1", action);
+    case "ADD_UPDATED_DATA": 
       return action.payload;
-    case "ADD_TODO":
-      console.log("action 2", action);
+    case "ADD_TODO": 
       return [action.payload, ...state];
     case "UPDTAE_TODO":
       const updatedState = state.map((obj) => {
@@ -73,11 +71,9 @@ function counter(state = initialData, action) {
           return action.payload;
         }
         return obj;
-      });
-      console.log("updatedState",updatedState)
+      }); 
       return updatedState;
-    default:
-      console.log("action 3", action);
+    default: 
       return state;
   }
 }
@@ -85,7 +81,7 @@ function counter(state = initialData, action) {
 // Create a Redux store holding the state of your app.
 // Its API is { subscribe, dispatch, getState }.
 let store = createStore(
-  counter,
+  UserReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

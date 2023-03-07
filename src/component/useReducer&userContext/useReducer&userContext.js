@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 import { CounterProvider, CounterContext } from "./Context";
- 
+
 // https://codesandbox.io/s/m4r124zkpj?file=/src/App.js
 function Counter() {
   const { state, dispatch } = useContext(CounterContext);
@@ -11,17 +11,6 @@ function Counter() {
       <h5>Count: {state.count}</h5>
       <button onClick={() => dispatch({ type: "increment" })}>+</button>
       <button onClick={() => dispatch({ type: "decrement" })}>-</button>
-    </div>
-  );
-}
-
-function SeparateComponent() {
-  const { state } = useContext(CounterContext);
-
-  return (
-    <div>
-      <h1>Shared count: {state.count}</h1>
-      <button onClick={() => {}}>Fetch again</button>
     </div>
   );
 }
@@ -41,12 +30,10 @@ function ReactHooksStoresExample() {
     <div className="App">
       <CounterProvider>
         <Counter />
-        <SeparateComponent />
         <Testinjo />
       </CounterProvider>
     </div>
   );
 }
- 
 
 export default ReactHooksStoresExample;

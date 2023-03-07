@@ -179,11 +179,15 @@ useMemos
 
 32. router and navigator push and passing data from one route to another
  
-<!--  till here completed --> 
 
 33. redux
 34. useSelector hooks
 35. useDispatch hooks
+
+36. useReducer, useContext, createContext
+
+37. Todo using redux
+<!--  till here completed --> 
 
 
 # JAVASCRIPT
